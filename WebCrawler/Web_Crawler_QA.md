@@ -36,7 +36,7 @@ This creates a database called web_crawler_db. This database ships with a table 
 
 **Screeshot Result: Query successfully completed**
 
-![test_4](assets/3.png)
+![test_4](assets/4.png)
 
 -----
 
