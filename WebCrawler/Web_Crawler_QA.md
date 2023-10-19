@@ -1,25 +1,30 @@
-# Testing Apache Pinot Data Integration
+# Testing Web Crawler Integration
 
-This README provides instructions for testing the Apache Pinot data integration in MindsDB.
+This README provides instructions for testing the Web Crawler integration in MindsDB.
 
-For more details, refer to the related [GitHub Issue](https://github.com/mindsdb/mindsdb/issues/7702) and the [Apache Pinot documentation](https://docs.mindsdb.com/integrations/data-integrations/apache-pinot) in the MindsDB documentation.
+For more details, refer to the related [GitHub Issue](https://github.com/mindsdb/mindsdb/issues/7896).
 
-## Test Cases Apache Pinot
+## Test Cases MindsDB Web Crawler
+-----
+### 1. Install MindsDB Web Crawler Locally via pip
+
+**Screeshot Result: Successfully installed**
 
 ![test_1](assets/1.png)
 
 -----
-### 1. Install the Apache Pinot handler dependencies
+### 2. Create Database Using Web Engine In MindsDB 
 
-**Screeshot Result: Successfully installed**
+**Description:**
+This creates a database called web_crawler_db. This database ships with a table called crawler that we can use to crawl data given some url/urls.
+
+**Screeshot Result: Query successfully completed**
 
 ![test_2](assets/2.png)
 
 -----
-### 2. Create a Apache Pinot Datasource on MindsDB 
 
-**Description:**
-To use this handler and connect to the Apache Pinot server in MindsDB.
+### 3. Search for Web Content using the Crawler Table in Web Database
 
 **Screeshot Result: Query successfully completed**
 
@@ -27,14 +32,14 @@ To use this handler and connect to the Apache Pinot server in MindsDB.
 
 -----
 
-### 3. Query Table Apache Pinot Datasource
+### 4. Search for Contents on more than one Website using the Crawler Table in Web Database
 
 **Screeshot Result: Query successfully completed**
 
-![test_4](assets/4.png)
+![test_4](assets/3.png)
 
 -----
 
 ## Result
 
-The Apache Pinot data integration has been successfully tested, and all test cases are working as expected.
+The Web Crawler integration has been successfully tested, and all test cases are working as expected.
